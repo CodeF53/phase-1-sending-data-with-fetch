@@ -24,7 +24,7 @@ function submitData(user_name, user_email) {
             return response.json();
         }).then(function(something) {
             document.body.innerHTML = something.id
-        })/*.catch(function(error_aaa) {
-            document.body.innerHTML = error_aaa.message
-        })*/
+        }).catch(function(error) {
+            document.body.innerHTML = error.message
+        })
 }
